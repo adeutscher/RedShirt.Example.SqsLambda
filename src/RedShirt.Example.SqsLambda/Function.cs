@@ -3,9 +3,11 @@ using Amazon.Lambda.Serialization.SystemTextJson;
 using Amazon.Lambda.SQSEvents;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using RedShirt.Example.SqsLambda.Extensions;
 using RedShirt.Example.SqsLambda.Implementations.Extensions;
 using Serilog;
+using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(DefaultLambdaJsonSerializer))]
@@ -47,9 +49,16 @@ public class Function
             .WriteTo.Console()
             .CreateLogger();
 
+        if (!Enum.TryParse<LogLevel>(configuration["LogLevel"], out var logLevel))
+        {
+            logLevel = LogLevel.Warning;
+        }
+
         var provider = new ServiceCollection()
             .AddLogging(loggingBuilder =>
-                loggingBuilder.AddSerilog(dispose: true))
+                loggingBuilder
+                    .AddSerilog(dispose: true)
+                    .SetMinimumLevel(logLevel))
             .AddOptions()
             .AddSingleton<Handler>()
             .AddSingleton<ISafeRecordHandler, SafeRecordHandler>()

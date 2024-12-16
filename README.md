@@ -19,4 +19,5 @@ bash init-repo.sh New.Namespace.Here
 
 # References
 
+* https://github.com/serilog/serilog-extensions-logging
 * https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html
