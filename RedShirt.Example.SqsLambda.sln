@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda", "src\RedShirt.Example.SqsLambda\RedShirt.Example.SqsLambda.csproj", "{7E81C143-BDA9-40E4-9346-CC3DB80784CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.Implementations.UnitTests", "RedShirt.Example.SqsLambda.Implementations.UnitTests\RedShirt.Example.SqsLambda.Implementations.UnitTests.csproj", "{D0EBD665-1521-49EF-BABC-0499A0FFE763}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.Implementations.UnitTests", "test\RedShirt.Example.SqsLambda.Implementations.UnitTests\RedShirt.Example.SqsLambda.Implementations.UnitTests.csproj", "{21E11EE9-5ED4-43F0-839A-6FC7BA6F01D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,10 @@ Global
 		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E11EE9-5ED4-43F0-839A-6FC7BA6F01D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E11EE9-5ED4-43F0-839A-6FC7BA6F01D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E11EE9-5ED4-43F0-839A-6FC7BA6F01D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E11EE9-5ED4-43F0-839A-6FC7BA6F01D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DB60429C-661C-488E-B4E2-B04427F9F81E} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
@@ -65,6 +65,6 @@ Global
 		{7A9BBCA2-04C3-47FE-8441-01915545359D} = {73B39760-F813-4774-8190-2F9E3486C3FB}
 		{3775A135-6732-428E-AE9B-E9DFFDD5D227} = {73B39760-F813-4774-8190-2F9E3486C3FB}
 		{7E81C143-BDA9-40E4-9346-CC3DB80784CA} = {73B39760-F813-4774-8190-2F9E3486C3FB}
-		{D0EBD665-1521-49EF-BABC-0499A0FFE763} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
+		{21E11EE9-5ED4-43F0-839A-6FC7BA6F01D5} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
 	EndGlobalSection
 EndGlobal

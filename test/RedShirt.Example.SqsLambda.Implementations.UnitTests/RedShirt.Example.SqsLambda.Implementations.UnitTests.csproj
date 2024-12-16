@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\src\RedShirt.Example.SqsLambda.Implementations\RedShirt.Example.SqsLambda.Implementations.csproj"/>
+        <ProjectReference Include="..\..\src\RedShirt.Example.SqsLambda.Implementations\RedShirt.Example.SqsLambda.Implementations.csproj"/>
     </ItemGroup>
 
 </Project>
