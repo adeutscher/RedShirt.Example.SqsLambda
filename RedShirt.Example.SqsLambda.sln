@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6EDAB0C7-5DB7-4DA1-8A16-F8048A2B136F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{73B39760-F813-4774-8190-2F9E3486C3FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AC7E43B1-C0E9-412E-A1D5-54625AF92867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.Core.UnitTests", "test\RedShirt.Example.SqsLambda.Core.UnitTests\RedShirt.Example.SqsLambda.Core.UnitTests.csproj", "{DB60429C-661C-488E-B4E2-B04427F9F81E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.IntegrationTests", "test\RedShirt.Example.SqsLambda.IntegrationTests\RedShirt.Example.SqsLambda.IntegrationTests.csproj", "{784E289B-34EE-479B-AF77-97E6C687D263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.UnitTests", "test\RedShirt.Example.SqsLambda.UnitTests\RedShirt.Example.SqsLambda.UnitTests.csproj", "{3DC314E9-F5F7-450A-963E-BEF9DE9722E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.Implementations", "src\RedShirt.Example.SqsLambda.Implementations\RedShirt.Example.SqsLambda.Implementations.csproj", "{7A9BBCA2-04C3-47FE-8441-01915545359D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.Core", "src\RedShirt.Example.SqsLambda.Core\RedShirt.Example.SqsLambda.Core.csproj", "{3775A135-6732-428E-AE9B-E9DFFDD5D227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda", "src\RedShirt.Example.SqsLambda\RedShirt.Example.SqsLambda.csproj", "{7E81C143-BDA9-40E4-9346-CC3DB80784CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirt.Example.SqsLambda.Implementations.UnitTests", "RedShirt.Example.SqsLambda.Implementations.UnitTests\RedShirt.Example.SqsLambda.Implementations.UnitTests.csproj", "{D0EBD665-1521-49EF-BABC-0499A0FFE763}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB60429C-661C-488E-B4E2-B04427F9F81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB60429C-661C-488E-B4E2-B04427F9F81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB60429C-661C-488E-B4E2-B04427F9F81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB60429C-661C-488E-B4E2-B04427F9F81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784E289B-34EE-479B-AF77-97E6C687D263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784E289B-34EE-479B-AF77-97E6C687D263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784E289B-34EE-479B-AF77-97E6C687D263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784E289B-34EE-479B-AF77-97E6C687D263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC314E9-F5F7-450A-963E-BEF9DE9722E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC314E9-F5F7-450A-963E-BEF9DE9722E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC314E9-F5F7-450A-963E-BEF9DE9722E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC314E9-F5F7-450A-963E-BEF9DE9722E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A9BBCA2-04C3-47FE-8441-01915545359D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9BBCA2-04C3-47FE-8441-01915545359D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A9BBCA2-04C3-47FE-8441-01915545359D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9BBCA2-04C3-47FE-8441-01915545359D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3775A135-6732-428E-AE9B-E9DFFDD5D227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3775A135-6732-428E-AE9B-E9DFFDD5D227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3775A135-6732-428E-AE9B-E9DFFDD5D227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3775A135-6732-428E-AE9B-E9DFFDD5D227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E81C143-BDA9-40E4-9346-CC3DB80784CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EBD665-1521-49EF-BABC-0499A0FFE763}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB60429C-661C-488E-B4E2-B04427F9F81E} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
+		{784E289B-34EE-479B-AF77-97E6C687D263} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
+		{3DC314E9-F5F7-450A-963E-BEF9DE9722E8} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
+		{7A9BBCA2-04C3-47FE-8441-01915545359D} = {73B39760-F813-4774-8190-2F9E3486C3FB}
+		{3775A135-6732-428E-AE9B-E9DFFDD5D227} = {73B39760-F813-4774-8190-2F9E3486C3FB}
+		{7E81C143-BDA9-40E4-9346-CC3DB80784CA} = {73B39760-F813-4774-8190-2F9E3486C3FB}
+		{D0EBD665-1521-49EF-BABC-0499A0FFE763} = {AC7E43B1-C0E9-412E-A1D5-54625AF92867}
+	EndGlobalSection
+EndGlobal
