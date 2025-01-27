@@ -45,8 +45,10 @@ public class Function
             .Build();
 
         Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Verbose()
             .Enrich.FromLogContext()
-            .WriteTo.Console()
+            .WriteTo.Console(outputTemplate:
+                "{Level:u3} {Message:l}{NewLine}{Exception}")
             .CreateLogger();
 
         if (!Enum.TryParse<LogLevel>(configuration["LogLevel"], out var logLevel))

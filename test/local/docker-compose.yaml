@@ -1,0 +1,15 @@
+services:
+  lambda:
+    build:
+      context: ../..
+      args:
+        TESTS_ENABLE: "${TESTS_ENABLE-1}"
+    ports:
+      - 9000:8080
+    environment:
+      # General
+      AWS_ACCESS_KEY_ID: foo
+      AWS_SECRET_ACCESS_KEY: bar
+      # App-specific variables
+      LOGLEVEL: Information
+      
