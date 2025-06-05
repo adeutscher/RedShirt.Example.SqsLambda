@@ -45,6 +45,7 @@ public class Function
             .Build();
 
         Log.Logger = new LoggerConfiguration()
+            // Need to set a minimum log level in both Serilog-land and Microsoft-land
             .MinimumLevel.Verbose()
             .Enrich.FromLogContext()
             .WriteTo.Console(outputTemplate:
