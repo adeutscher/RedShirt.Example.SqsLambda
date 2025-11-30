@@ -9,14 +9,14 @@
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Amazon.Lambda.Core" Version="2.6.0" />
+        <PackageReference Include="Amazon.Lambda.Core" Version="2.8.0"/>
         <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.4.4"/>
         <PackageReference Include="Amazon.Lambda.SQSEvents" Version="2.2.0"/>
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.5" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.5" />
-        <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.5" />
-        <PackageReference Include="Serilog.Extensions.Logging" Version="9.0.2" />
-        <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.0"/>
+        <PackageReference Include="Serilog.Extensions.Logging" Version="10.0.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1"/>
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\RedShirt.Example.SqsLambda.Core\RedShirt.Example.SqsLambda.Core.csproj"/>
