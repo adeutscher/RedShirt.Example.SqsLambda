@@ -14,25 +14,25 @@ public static class ConfigurationBuilderExtensions
         {
             var keySet = new HashSet<string>();
 
-            result.Add(kvp.Key, kvp.Value);
+            result[kvp.Key] = kvp.Value;
             keySet.Add(kvp.Key);
 
             var simplified = kvp.Key.Replace("_", "");
             if (keySet.Add(simplified))
             {
-                result.Add(simplified, kvp.Value);
+                result[simplified] = kvp.Value;
             }
 
             var parsed = Regex.Replace(kvp.Key, @"__+", ":");
             // ReSharper disable once InvertIf
             if (keySet.Add(parsed))
             {
-                result.Add(parsed, kvp.Value);
+                result[parsed] = kvp.Value;
 
                 var simplified2 = parsed.Replace("_", "");
                 if (keySet.Add(simplified2))
                 {
-                    result.Add(simplified2, kvp.Value);
+                    result[simplified2] = kvp.Value;
                 }
             }
         }

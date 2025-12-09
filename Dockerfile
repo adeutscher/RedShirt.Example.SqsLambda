@@ -1,8 +1,8 @@
 
-# You can also pull these images from DockerHub amazon/aws-lambda-dotnet:8
-FROM public.ecr.aws/lambda/dotnet:8 AS base
+# You can also pull these images from DockerHub amazon/aws-lambda-dotnet:10
+FROM public.ecr.aws/lambda/dotnet:10 AS base
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 COPY . /build
 WORKDIR /build

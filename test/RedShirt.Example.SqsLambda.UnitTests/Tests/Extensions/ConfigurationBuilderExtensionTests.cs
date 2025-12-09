@@ -7,8 +7,9 @@ public class ConfigurationBuilderExtensionTests
 {
     [Theory]
     [InlineData("A", "A", "B")]
+    [InlineData("A", "a", "B")]
     [InlineData("A_B", "A_B", "C")]
-    [InlineData("A_B", "AB", "C")]
+    [InlineData("C_D", "CD", "E")]
     [InlineData("A__B", "A:B", "C")]
     [InlineData("X__Y", "X__Y", "Z")]
     [InlineData("C", "C", "D")]
@@ -26,7 +27,7 @@ public class ConfigurationBuilderExtensionTests
                 .AddEnvironmentVariablesWithSegmentSupport()
                 .Build();
 
-            Assert.Equal(configuration[configurationKey], value);
+            Assert.Equal(value, configuration[configurationKey]);
         });
     }
 }
