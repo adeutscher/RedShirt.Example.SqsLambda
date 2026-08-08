@@ -38,3 +38,33 @@ Desktop.ini
 
 # Vim Swapfiles
 .*.swp
+
+# Test / coverage outputs
+[Tt]est[Rr]esults/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+*.lcov
+
+# Build / publish artifacts
+[Aa]rtifacts/
+publish/
+*.nupkg
+*.snupkg
+
+# Local / secrets
+.env
+.env.*
+!.env.example
+**/appsettings.*.local.json
+**/secrets.json
+
+# Rider / tooling leftovers
+*.DotSettings.user
+*.rsuser
+.nuke/
+
+# Logs
+*.log

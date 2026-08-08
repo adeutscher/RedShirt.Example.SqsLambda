@@ -23,3 +23,13 @@
 **/values.dev.yaml
 LICENSE
 README.md
+**/.github
+**/TestResults
+**/*.trx
+**/coverage*
+**/*.log
+**/*.md
+**/init-repo.sh
+**/*.DotSettings.user
+**/test/local
+**/.env.*
