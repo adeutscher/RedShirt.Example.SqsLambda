@@ -8,7 +8,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /build
 COPY src src
 COPY test test
-COPY *.sln .
+COPY *.slnx .
 COPY global.json .
 
 RUN dotnet restore
@@ -21,7 +21,7 @@ RUN \[ ${TESTS_ENABLE} -ne 1 \] \
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN rm -rf test *sln global \
+RUN rm -rf test *slnx global \
   && dotnet publish "src/RedShirt.Example.SqsLambda/RedShirt.Example.SqsLambda.csproj" -c $BUILD_CONFIGURATION -o /app/publish
 
 FROM base AS final
