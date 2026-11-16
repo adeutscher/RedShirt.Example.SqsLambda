@@ -33,6 +33,8 @@ can also be run locally from any directory:
 
 Local runs need `dotnet-coverage`, `gitleaks`, and `trivy` (`hadolint` is optional). Reports land in `artifacts/`.
 
+Reviewed exceptions to the image scan live in `trivy-policy.rego`, each with its reasoning.
+
 # References
 
 * https://github.com/serilog/serilog-extensions-logging
